@@ -1,4 +1,18 @@
 h1 {
   font-size: 6rem;
   text-align: center;
+  color: midnightblue;
+}
+
+.liste_forside {
+  font-size: 1.5rem;
+  padding-left: 30%;
+  color: midnightblue;
+}
+
+.boks {
+  background-color: grey;
+  margin: 10%;
+  padding: 10%;
+  font-size: 1.5rem;
 }

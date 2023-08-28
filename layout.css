@@ -4,7 +4,8 @@
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 375px));
+  gap: 1.5rem;
 }
 .grid-container3 {
   display: grid;

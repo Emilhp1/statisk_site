@@ -21,9 +21,11 @@ function showProduct(product) {
   } else {
     copy.querySelector(".discount").remove();
   }
+
   if (product.soldout) {
     copy.querySelector("article").classList.add("udsolgt");
   }
+
   copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
   console.log(product);
   //clone, ændre, appende

@@ -26,9 +26,12 @@ function showProduct(product) {
     copy.querySelector("article").classList.add("udsolgt");
   }
 
-  copy.querySelector("p.p2").textContent = product.price + "KR";
   copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
   console.log(product);
+
+  copy.querySelector("p.p2").textContent = product.price + "KR";
+
+  copy.querySelector(".read-more").setAttribute("href", `product.html?id=${product.id}`);
   //clone, ændre, appende
   parent.appendChild(copy);
 }

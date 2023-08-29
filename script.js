@@ -31,7 +31,7 @@ function showProduct(product) {
 
   copy.querySelector("p.p2").textContent = product.price + "KR";
 
-  copy.querySelector(".read-more").setAttribute("href", `product.html?id=${product.id}`);
+  copy.querySelector(".read-more").setAttribute("href", `produkt.html?id=${product.id}`);
   //clone, ændre, appende
   parent.appendChild(copy);
 }

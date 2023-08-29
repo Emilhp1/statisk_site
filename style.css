@@ -18,10 +18,13 @@ h1 {
 }
 
 .boks2 {
-  background-color: bisque;
+  background-color: rgb(255, 255, 255);
   margin: 10%;
   padding: 10%;
   font-size: 1.5rem;
+}
+.boks2:hover {
+  background-color: rgba(200, 200, 200, 0.476);
 }
 
 img {

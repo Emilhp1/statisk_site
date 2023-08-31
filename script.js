@@ -1,8 +1,16 @@
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("category");
 
+let endpint = "https://kea-alt-del.dk/t7/api/products";
+
+if (category) {
+  endpint = "https://kea-alt-del.dk/t7/api/products?category=" + category;
+}
+
 //fetche
-fetch("https://kea-alt-del.dk/t7/api/products?category=" + category)
+
+//fetche
+fetch(endpint)
   .then((res) => res.json())
   .then(showProducts);
 
@@ -34,7 +42,8 @@ function showProduct(product) {
 
   copy.querySelector("p.p2").textContent = product.price + "KR";
 
-  copy.querySelector(".read-more").setAttribute("href", `produkt.html?id=${product.id}`);
+  copy.querySelector(".boks2 a").setAttribute("href", `produkt.html?id=${product.id}`);
+  copy.querySelector(".boks2 .read-more").setAttribute("href", `produkt.html?id=${product.id}`);
   //clone, ændre, appende
   parent.appendChild(copy);
 }
